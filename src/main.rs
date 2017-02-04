@@ -6,6 +6,9 @@
 
 #![allow(dead_code)]  // TODO: Remove
 
+#[macro_use]
+extern crate lazy_static;
+
 extern crate rayon;
 extern crate test;
 
@@ -14,6 +17,7 @@ mod types;
 mod bitboard;
 mod attacks;
 mod board;
+mod perft;
 
 use rayon::prelude::*;
 
